@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="423.0" prefWidth="419.0" style="-fx-background-color: gray;" stylesheets="application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginScreen">
+   <children>
+      <Button fx:id="loginbutton" layoutX="60.0" layoutY="328.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="45.0" prefWidth="339.0" style="-fx-background-color: #78b2ff; -fx-background-radius: 10;" stylesheets="@../../../../Desktop/l.css" text="Login" textFill="#d4f8ff" wrapText="true">
+         <effect>
+            <InnerShadow color="#0faea6" />
+         </effect>
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="292.0" fitWidth="294.0" layoutX="87.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="resources/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorLabel" layoutX="30.0" layoutY="377.0" prefHeight="37.0" prefWidth="324.0" textFill="#790606">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="15.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/userIcon.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pwField" focusTraversable="false" layoutX="60.0" layoutY="270.0" onAction="#buttonClick" prefHeight="51.0" prefWidth="339.0" promptText="Password" style="-fx-background-radius: 15; -fx-background-color: #dddddd;">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4cffae" />
+         </effect>
+      </PasswordField>
+      <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="15.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/pwIcon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userField" focusTraversable="false" layoutX="60.0" layoutY="215.0" prefHeight="51.0" prefWidth="339.0" promptText="Username" style="-fx-background-radius: 15; -fx-background-color: #dddddd;" stylesheets="@../../../../Desktop/l.css">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4cffae" />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

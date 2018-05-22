@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="660.0" prefWidth="689.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.questionScreen">
+   <children>
+      <Box layoutX="10.0" layoutY="10.0" />
+      <TextField fx:id="insField" focusTraversable="false" layoutX="189.0" layoutY="330.0" onAction="#createClick" prefHeight="24.0" prefWidth="459.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <RadioButton fx:id="r4" focusTraversable="false" layoutX="194.0" layoutY="240.0" mnemonicParsing="false" text="4" textFill="#eeeeee" />
+      <RadioButton fx:id="r3" focusTraversable="false" layoutX="194.0" layoutY="195.0" mnemonicParsing="false" text="3" textFill="#eeeeee" />
+      <RadioButton fx:id="r2" focusTraversable="false" layoutX="194.0" layoutY="150.0" mnemonicParsing="false" text="2" textFill="#eeeeee" />
+      <RadioButton fx:id="r1" focusTraversable="false" layoutX="194.0" layoutY="105.0" mnemonicParsing="false" text="1" textFill="#eeeeee" />
+      <TextField fx:id="ans4" focusTraversable="false" layoutX="264.0" layoutY="240.0" onAction="#createClick" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <TextField fx:id="ans3" focusTraversable="false" layoutX="264.0" layoutY="195.0" onAction="#createClick" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <TextField fx:id="ans2" focusTraversable="false" layoutX="264.0" layoutY="150.0" onAction="#createClick" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <TextField fx:id="ans1" focusTraversable="false" layoutX="264.0" layoutY="105.0" onAction="#createClick" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <TextField fx:id="qField" focusTraversable="false" layoutX="189.0" layoutY="60.0" onAction="#createClick" prefHeight="24.0" prefWidth="459.0" style="-fx-background-radius: 5; -fx-background-color: dddd;" />
+      <Label layoutX="26.0" layoutY="330.0" text="Instructions" textFill="#eeeeee" />
+      <Label layoutX="26.0" layoutY="285.0" text="Profession" textFill="#eeeeee" />
+      <Label layoutX="24.0" layoutY="105.0" text="Answers" textFill="#eeeeee" />
+      <Label layoutX="26.0" layoutY="60.0" text="Question" textFill="#eeeeee" />
+      <Button fx:id="cancel" layoutX="371.0" layoutY="598.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="51.0" prefWidth="277.0" style="-fx-background-radius: 10;" text="Cancel" textFill="#6b6b6b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ab0000" />
+         </effect>
+      </Button>
+      <Button fx:id="create" layoutX="32.0" layoutY="598.0" mnemonicParsing="false" onAction="#createClick" prefHeight="51.0" prefWidth="277.0" style="-fx-background-radius: 10;" text="Create" textFill="#6b6b6b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#00ff11" />
+         </effect>
+      </Button>
+      <Label fx:id="missingError" layoutX="26.0" layoutY="549.0" text="*Missing fields" textFill="#ae0000" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="error1" layoutX="159.0" layoutY="60.0" text="*" textFill="#ae0000" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="error2" layoutX="159.0" layoutY="105.0" text="*" textFill="#ae0000" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="error3" layoutX="159.0" layoutY="285.0" text="*" textFill="#ae0000" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="error4" layoutX="159.0" layoutY="330.0" text="*" textFill="#ae0000" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="answerError" layoutX="26.0" layoutY="504.0" text="*You must pick one correct answer" textFill="#ae0000" visible="false" />
+      <ComboBox fx:id="prof" focusTraversable="false" layoutX="189.0" layoutY="285.0" prefHeight="24.0" prefWidth="459.0" style="-fx-background-radius: 5;" />
+   </children>
+</AnchorPane>
